@@ -1,0 +1,98 @@
+body {
+    --main-color: #333333;
+    --main-color-hover: #616161;
+    --logo-img: url("logo.svg");
+    --photo-img: url("photo.jpg");
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 114px;
+    width: 170px;
+    background-color: var(--main-color);
+    -webkit-mask-image: var(--logo-img);
+    mask-image: var(--logo-img);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.social {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    -webkit-mask-image: var(--social-logo);
+    mask-image: var(--social-logo);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.social:hover {
+    background-color: var(--main-color-hover);
+}
+
+.socials-wrapper {
+    display: flex;
+}
+
+.vk {
+    --social-logo: url("icons/vk.svg");
+}
+
+.instagram {
+    --social-logo: url("icons/instagram.svg");
+}
+
+.deviantart {
+    --social-logo: url("icons/deviantart.svg");
+}
+
+.twitter {
+    --social-logo: url("icons/twitter.svg");
+}
+
+.facebook {
+    --social-logo: url("icons/facebook.svg");
+}
+
+.telegram {
+    --social-logo: url("icons/telegram.svg");
+}
+
+.github {
+    --social-logo: url("icons/github.svg");
+}
+
+.linkedin {
+    --social-logo: url("icons/linkedin.svg");
+}
+
+.skype {
+    --social-logo: url("icons/skype.svg");
+}
+
+.gumroad {
+    --social-logo: url("icons/gumroad.svg");
+}
+
+.polywork {
+    --social-logo: url("icons/polywork.svg");
+}
+
+.photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    background-image: var(--photo-img);
+    background-size: cover;
+}
