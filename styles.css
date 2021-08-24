@@ -1,14 +1,21 @@
 body {
     --main-color: #333333;
     --main-color-hover: #616161;
+    --light-color: #eeeeee;
     --logo-img: url("logo.svg");
     --photo-img: url("photo.jpg");
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--main-color);
+    font-size: 20px;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+    background-color: var(--light-color);
 }
 
 .logo {
@@ -89,10 +96,36 @@ body {
     --social-logo: url("icons/polywork.svg");
 }
 
+.main {
+    padding: 80px 40px;
+}
+
+.info-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+}
+
 .photo {
     height: 150px;
     width: 150px;
     border-radius: 20px;
     background-image: var(--photo-img);
     background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+.name-block {
+    text-align: center;
 }
