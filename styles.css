@@ -1,13 +1,24 @@
 body {
+    --background-color: #fafafa;
     --main-color: #333333;
     --main-color-hover: #616161;
-    --light-color: #eeeeee;
+    --secondary-color: #eeeeee;
     --logo-img: url("logo.svg");
     --photo-img: url("photo.jpg");
     margin: 0;
     font-family: "Roboto", sans-serif;
     color: var(--main-color);
     font-size: 20px;
+    background-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --background-color: #131313;
+        --main-color: #eeeeee;
+        --main-color-hover: #ffffff;
+        --secondary-color: #333333;
+    }
 }
 
 .main {
@@ -22,11 +33,13 @@ body {
 
 .section {
     display: flex;
-    background-color: red;
+    background-color: var(--secondary-color);
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 40px;
+    border-radius: 20px;
 }
 
 .section.programmer {
@@ -78,15 +91,22 @@ body {
 }
 
 .section-header {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-.section-subheader {
+.section-header + .section-subheader {
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
-.section-description {
+.section-description + .section-contact {
+    margin-top: 12px;
 }
 
 .section-contact {
+    font-size: 16px;
 }
 
 .section-links {
@@ -117,7 +137,7 @@ body {
 .social {
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 8px;
     cursor: pointer;
     background-color: var(--main-color);
     -webkit-mask-image: var(--social-logo);
