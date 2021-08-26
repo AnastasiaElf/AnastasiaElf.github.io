@@ -10,22 +10,108 @@ body {
     font-size: 20px;
 }
 
-.header {
+.main {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+}
+
+.section {
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
     padding: 20px;
-    background-color: var(--light-color);
+}
+
+.section.programmer {
+    text-align: right;
+}
+
+.section.programmer .section-links {
+    justify-content: flex-end;
+}
+
+.section.artist {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 700px) {
+    .section,
+    .section.artist,
+    .section.programmer {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-image {
+        margin-bottom: 20px;
+    }
+
+    .section.artist .section-links,
+    .section.programmer .section-links {
+        justify-content: center;
+    }
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-image {
+    height: 150px;
+    width: 150px;
+    max-width: 100%;
+}
+
+.section-info {
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+
+.section-header {
+}
+
+.section-subheader {
+}
+
+.section-description {
+}
+
+.section-contact {
+}
+
+.section-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    border-radius: 20px;
+    background-image: var(--photo-img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logo {
-    height: 114px;
-    width: 170px;
     background-color: var(--main-color);
     -webkit-mask-image: var(--logo-img);
     mask-image: var(--logo-img);
-    -webkit-mask-size: cover;
-    mask-size: cover;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
 }
 
 .social {
@@ -94,43 +180,4 @@ body {
 
 .polywork {
     --social-logo: url("icons/polywork.svg");
-}
-
-.main {
-    padding: 80px 40px;
-}
-
-.info-block {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr);
-    column-gap: 25px;
-    row-gap: 25px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.info {
-    text-align: center;
-}
-
-.photo {
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
-    background-image: var(--photo-img);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-}
-
-.name-block {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.small-text {
-    font-size: 14px;
 }
