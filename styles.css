@@ -28,7 +28,7 @@ body {
     max-width: 650px;
     margin-right: auto;
     margin-left: auto;
-    padding: 40px;
+    padding: 30px;
 }
 
 .section {
@@ -37,9 +37,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
     padding: 40px;
     border-radius: 20px;
+}
+
+.section:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .section.programmer {
@@ -55,12 +58,20 @@ body {
 }
 
 @media (max-width: 700px) {
+    .main {
+        padding: 20px;
+    }
+
     .section,
     .section.artist,
     .section.programmer {
         align-items: center;
         flex-direction: column;
         text-align: center;
+    }
+
+    .section:not(:last-child) {
+        margin-bottom: 20px;
     }
 
     .section-image {
