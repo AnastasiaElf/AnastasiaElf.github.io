@@ -6,9 +6,10 @@ body {
     --logo-img: url("logo.svg");
     --photo-img: url("photo.jpg");
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: var(--main-color);
     font-size: 20px;
+    font-weight: 500;
     background-color: var(--background-color);
 }
 
