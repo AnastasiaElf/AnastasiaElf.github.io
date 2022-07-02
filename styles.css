@@ -201,7 +201,91 @@ body {
     --elf-link-icon: url("icons/telegram.svg");
 }
 
-.elf-link.elf-link-neutral {
+.elf-link.elf-vk {
+    --elf-link-icon: url("icons/vk.svg");
+}
+
+.elf-link.elf-instagram {
+    --elf-link-icon: url("icons/instagram.svg");
+}
+
+.elf-link.elf-deviantart {
+    --elf-link-icon: url("icons/deviantart.svg");
+}
+
+.elf-link.elf-twitter {
+    --elf-link-icon: url("icons/twitter.svg");
+}
+
+.elf-link.elf-facebook {
+    --elf-link-icon: url("icons/facebook.svg");
+}
+
+.elf-link.elf-telegram {
+    --elf-link-icon: url("icons/telegram.svg");
+}
+
+.elf-link.elf-github {
+    --elf-link-icon: url("icons/github.svg");
+}
+
+.elf-link.elf-linkedin {
+    --elf-link-icon: url("icons/linkedin.svg");
+}
+
+.elf-link.elf-skype {
+    --elf-link-icon: url("icons/skype.svg");
+}
+
+.elf-link.elf-gumroad {
+    --elf-link-icon: url("icons/gumroad.svg");
+}
+
+.elf-link.elf-polywork {
+    --elf-link-icon: url("icons/polywork.svg");
+}
+
+.elf-link.elf-furaffinity {
+    --elf-link-icon: url("icons/furaffinity.svg");
+}
+
+.elf-link.elf-pinterest {
+    --elf-link-icon: url("icons/pinterest.svg");
+}
+
+.elf-link.elf-toyhouse {
+    --elf-link-icon: url("icons/toyhouse.svg");
+}
+
+.elf-link.elf-ychcommishes {
+    --elf-link-icon: url("icons/ychcommishes.svg");
+}
+
+.elf-link.elf-iconfinder {
+    --elf-link-icon: url("icons/iconfinder.svg");
+}
+
+.elf-link.elf-email {
+    --elf-link-icon: url("icons/email.svg");
+}
+
+.elf-link.elf-patreon {
+    --elf-link-icon: url("icons/patreon.svg");
+}
+
+.elf-link.elf-kofi {
+    --elf-link-icon: url("icons/kofi.svg");
+}
+
+.elf-link.elf-bmc {
+    --elf-link-icon: url("icons/bmc.svg");
+}
+
+.elf-link.elf-boosty {
+    --elf-link-icon: url("icons/boosty.svg");
+}
+
+.elf-link.elf-elf-link.elf-link-neutral {
     --elf-link-background: var(--elf-neutral-light-color);
     --elf-link-shadow: var(--elf-neutral-color);
     --elf-link-color: var(--elf-neutral-text-color);
