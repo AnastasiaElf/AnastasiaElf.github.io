@@ -5,5 +5,5 @@ function updateLinkContentsWidth() {
     let elementsWidth = Array.from(elements, (elem) => elem.offsetWidth);
     let maxWidth = Math.max(...elementsWidth);
 
-    elements.forEach((elem) => (elem.style.width = `${maxWidth}px`));
+    elements.forEach((elem) => (elem.style.width = `${maxWidth + 1}px`));
 }

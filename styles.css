@@ -80,6 +80,14 @@ body {
     text-align: center;
 }
 
+.elf-col-6 {
+    width: calc(50% - var(--elf-card-margin) / 2);
+}
+
+.elf-gap {
+    gap: 20px;
+}
+
 .elf-card {
     display: flex;
     flex-direction: column;
@@ -104,6 +112,7 @@ body {
 
 .elf-card-label {
     font-weight: 600;
+    text-align: center;
 }
 
 .elf-avatar {
@@ -133,9 +142,10 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     padding: 15px;
+    padding-left: 40px;
     cursor: pointer;
     background: var(--elf-link-background);
     border-radius: 20px;
