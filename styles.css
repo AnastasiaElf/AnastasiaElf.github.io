@@ -96,8 +96,21 @@ body {
     flex-wrap: wrap;
 }
 
+.elf-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
 .elf-card-label {
     font-weight: 600;
+    text-align: center;
+}
+
+.elf-card-sub-label {
+    font-size: 16px;
     text-align: center;
 }
 
@@ -191,6 +204,14 @@ body {
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+}
+
+.elf-link.elf-discord {
+    --elf-link-icon: url("icons/discord.svg");
+}
+
+.elf-link.elf-paypal {
+    --elf-link-icon: url("icons/paypal.svg");
 }
 
 .elf-link.elf-deviantart {
@@ -289,10 +310,25 @@ body {
     --elf-link-icon: url("icons/boosty.svg");
 }
 
-.elf-link.elf-elf-link.elf-link-neutral {
+.elf-link.elf-link-neutral {
     --elf-link-background: var(--elf-neutral-light-color);
     --elf-link-shadow: var(--elf-neutral-color);
     --elf-link-color: var(--elf-neutral-text-color);
+}
+
+.elf-link.elf-link-disabled {
+    cursor: text;
+}
+
+.elf-link.elf-link-disabled:hover,
+.elf-link.elf-link-disabled:focus {
+    transform: none;
+    box-shadow: 4px 4px 1px 0px var(--elf-link-shadow);
+}
+
+.elf-link:active {
+    transform: none;
+    box-shadow: 4px 4px 1px 0px var(--elf-link-shadow);
 }
 
 @media (max-width: 700px) {
