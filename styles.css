@@ -13,10 +13,10 @@
 
     --elf-logo-img: url("images/logo-dark.png");
     --elf-avatar-img: url("images/avatar-art.png");
-    --elf-avatar-size: 170px;
+    --elf-avatar-size: 130px;
 
     --elf-card-background-color: var(--elf-secondary-color);
-    --elf-card-margin: 30px;
+    --elf-card-margin: 20px;
 
     --elf-links-gap: 20px;
 }
@@ -25,7 +25,7 @@ body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
     color: var(--elf-primary-color);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     background-color: var(--elf-background-color);
 }
@@ -54,10 +54,10 @@ body {
 .elf-main {
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 600px;
     margin-right: auto;
     margin-left: auto;
-    padding: 30px;
+    padding: 20px;
     gap: var(--elf-card-margin);
 }
 
@@ -67,13 +67,25 @@ body {
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
-    gap: var(--elf-card-margin);
+    column-gap: var(--elf-card-margin);
+    row-gap: var(--elf-links-gap);
+}
+
+.elf-inline-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    column-gap: var(--elf-card-margin);
+    row-gap: var(--elf-links-gap);
 }
 
 .elf-col {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
 }
 
@@ -85,7 +97,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--elf-card-background-color);
-    padding: 30px;
+    padding: 24px;
     border-radius: 20px;
     word-break: normal;
     gap: 20px;
@@ -94,6 +106,8 @@ body {
 .elf-card-row {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .elf-card-header {
@@ -106,6 +120,7 @@ body {
 
 .elf-card-label {
     font-weight: 600;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -126,14 +141,14 @@ body {
 }
 
 .elf-logo {
-    width: 315px;
-    height: 70px;
+    width: 200px;
     max-width: 100%;
-    background-image: var(--elf-logo-img);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    content: var(--elf-logo-img);
     margin-bottom: 10px;
+}
+
+.elf-logo.elf-logo-light {
+    display: none;
 }
 
 .elf-links-col {
@@ -161,18 +176,22 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    padding: 15px;
-    padding-left: 40px;
+    padding: 14px 32px;
     cursor: pointer;
     background: var(--elf-link-background);
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.2s;
     text-decoration: none;
     box-shadow: 4px 4px 1px 0px var(--elf-link-shadow);
     color: var(--elf-link-color);
     font-weight: 600;
     outline: none;
+}
+
+.elf-inline-row .elf-link {
+    justify-content: center;
+    padding-left: 14px;
 }
 
 .elf-link:hover,
@@ -188,12 +207,12 @@ body {
 
 .elf-link-content {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .elf-link-icon {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     display: inline-block;
     background-color: var(--elf-link-color);
     -webkit-mask-image: var(--elf-link-icon);
@@ -205,6 +224,8 @@ body {
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
+
+/* TODO: remove icons (including svg files) that I don't need anymore */
 
 .elf-link.elf-discord {
     --elf-link-icon: url("icons/discord.svg");
@@ -310,6 +331,14 @@ body {
     --elf-link-icon: url("icons/boosty.svg");
 }
 
+.elf-link.elf-ocs {
+    --elf-link-icon: url("icons/ocs_logo.png");
+}
+
+.elf-link.elf-palette {
+    --elf-link-icon: url("icons/fa_palette.svg");
+}
+
 .elf-link.elf-link-neutral {
     --elf-link-background: var(--elf-neutral-light-color);
     --elf-link-shadow: var(--elf-neutral-color);
@@ -349,6 +378,7 @@ body {
 
     .elf-link {
         justify-content: center;
-        padding-left: 15px;
+        padding-left: 14px;
+        max-width: 100%;
     }
 }
