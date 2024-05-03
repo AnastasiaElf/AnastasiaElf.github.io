@@ -1,17 +1,6 @@
 window.onload = () => {
-    updateLinkContentsWidth();
     enableCopyOnClick();
 };
-
-function updateLinkContentsWidth() {
-    if (window.screen.width <= 700) {
-        let elements = document.querySelectorAll(".elf-link .elf-link-content");
-        let elementsWidth = Array.from(elements, (elem) => elem.offsetWidth);
-        let maxWidth = Math.max(...elementsWidth);
-
-        elements.forEach((elem) => (elem.style.width = `${maxWidth + 1}px`));
-    }
-}
 
 function enableCopyOnClick() {
     let linkElem = document.querySelector("#elf-discord-link");
@@ -24,7 +13,7 @@ function enableCopyOnClick() {
         }
 
         navigator.clipboard.writeText("anastasiaelf");
-        textElem.innerHTML = "Username copied!";
+        textElem.innerHTML = "Copied!";
 
         timeout = setTimeout(() => {
             textElem.innerHTML = "@anastasiaelf";
