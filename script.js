@@ -3,8 +3,8 @@ window.onload = () => {
 };
 
 function enableCopyOnClick() {
-    let linkElem = document.querySelector("#ana-discord-link");
-    let textElem = linkElem.querySelector(".ana-link-text");
+    let linkElem = document.querySelector("#elf-discord-link");
+    let textElem = linkElem.querySelector(".elf-link-text");
     let timeout;
 
     linkElem.addEventListener("click", () => {

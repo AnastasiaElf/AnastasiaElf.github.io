@@ -1,26 +1,26 @@
 :root {
-    --ana-background-color: #fafafa;
-    --ana-primary-color: #333333;
-    --ana-secondary-color: #eeeeee;
+    --elf-background-color: #fafafa;
+    --elf-primary-color: #333333;
+    --elf-secondary-color: #eeeeee;
 
-    --ana-neutral-light-color: #b9b9b9;
-    --ana-neutral-color: #7f7f7f;
-    --ana-neutral-text-color: #333333;
+    --elf-neutral-light-color: #b9b9b9;
+    --elf-neutral-color: #7f7f7f;
+    --elf-neutral-text-color: #333333;
 
-    --ana-accent-light-color: #d2caef;
-    --ana-accent-color: #8f83ed;
-    --ana-accent-text-color: #6f63cf;
+    --elf-accent-light-color: #d2caef;
+    --elf-accent-color: #8f83ed;
+    --elf-accent-text-color: #6f63cf;
 
-    --ana-logo-img: url("images/logo-dark.png");
-    --ana-avatar-img: url("images/avatar-art.png");
+    --elf-logo-img: url("images/logo-dark.png");
+    --elf-avatar-img: url("images/avatar-art.png");
 }
 
 body {
     font-family: "Quicksand", sans-serif;
     margin: 0;
-    color: var(--ana-primary-color);
+    color: var(--elf-primary-color);
     font-weight: 500;
-    background-color: var(--ana-background-color);
+    background-color: var(--elf-background-color);
 }
 
 * {
@@ -29,20 +29,20 @@ body {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --ana-background-color: #131313;
-        --ana-primary-color: #eeeeee;
-        --ana-secondary-color: #333333;
+        --elf-background-color: #131313;
+        --elf-primary-color: #eeeeee;
+        --elf-secondary-color: #333333;
 
-        --ana-accent-light-color: #b0e9d5;
-        --ana-accent-color: #00a97d;
-        --ana-accent-text-color: #1a9473;
+        --elf-accent-light-color: #b0e9d5;
+        --elf-accent-color: #00a97d;
+        --elf-accent-text-color: #1a9473;
 
-        --ana-logo-img: url("images/logo-light.png");
-        --ana-avatar-img: url("images/avatar-life.png");
+        --elf-logo-img: url("images/logo-light.png");
+        --elf-avatar-img: url("images/avatar-life.png");
     }
 }
 
-.ana-content {
+.elf-content {
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -52,26 +52,26 @@ body {
     gap: 20px;
 }
 
-.ana-card-row {
+.elf-card-row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
 }
 
-.ana-card {
+.elf-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     flex: 1;
-    background-color: var(--ana-secondary-color);
+    background-color: var(--elf-secondary-color);
     border-radius: 20px;
     padding: 24px;
     gap: 18px;
 }
 
-.ana-row {
+.elf-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -79,46 +79,46 @@ body {
     gap: 20px;
 }
 
-.ana-avatar {
-    --ana-avatar-size: 110px;
+.elf-avatar {
+    --elf-avatar-size: 110px;
 
-    width: var(--ana-avatar-size);
+    width: var(--elf-avatar-size);
     max-width: 100%;
-    border-radius: var(--ana-avatar-size);
-    content: var(--ana-avatar-img);
+    border-radius: var(--elf-avatar-size);
+    content: var(--elf-avatar-img);
 }
 
-.ana-about {
+.elf-about {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.ana-logo {
+.elf-logo {
     width: 100%;
     max-width: 170px;
-    content: var(--ana-logo-img);
+    content: var(--elf-logo-img);
 }
 
-.ana-title {
+.elf-title {
     font-size: 18px;
     font-weight: 600;
 }
 
-.ana-sub-title {
+.elf-sub-title {
     font-size: 16px;
     font-weight: 500;
 }
 
-.ana-card-title {
+.elf-card-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
 }
 
-.ana-links-row {
+.elf-links-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -129,7 +129,7 @@ body {
     gap: 18px;
 }
 
-.ana-links-col {
+.elf-links-col {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,10 +137,10 @@ body {
     gap: 18px;
 }
 
-.ana-link {
-    --ana-link-background: var(--ana-accent-light-color);
-    --ana-link-shadow: var(--ana-accent-color);
-    --ana-link-color: var(--ana-accent-text-color);
+.elf-link {
+    --elf-link-background: var(--elf-accent-light-color);
+    --elf-link-shadow: var(--elf-accent-color);
+    --elf-link-color: var(--elf-accent-text-color);
 
     display: flex;
     align-items: center;
@@ -150,46 +150,46 @@ body {
     width: 100%;
     padding: 12px 32px;
     gap: 8px;
-    background: var(--ana-link-background);
-    color: var(--ana-link-color);
+    background: var(--elf-link-background);
+    color: var(--elf-link-color);
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
-    box-shadow: 4px 4px 1px 0px var(--ana-link-shadow);
+    box-shadow: 4px 4px 1px 0px var(--elf-link-shadow);
     transition: all 0.2s;
     outline: none;
     text-decoration: none;
 }
 
-.ana-link:hover,
-.ana-link:focus {
+.elf-link:hover,
+.elf-link:focus {
     transform: translate(2px, 2px);
-    box-shadow: 2px 2px 1px 0px var(--ana-link-shadow);
+    box-shadow: 2px 2px 1px 0px var(--elf-link-shadow);
 }
 
-.ana-link:active {
+.elf-link:active {
     transform: translate(3px, 3px);
     box-shadow: none;
 }
 
-.ana-link.ana-link-neutral {
-    --ana-link-background: var(--ana-neutral-light-color);
-    --ana-link-shadow: var(--ana-neutral-color);
-    --ana-link-color: var(--ana-neutral-text-color);
+.elf-link.elf-link-neutral {
+    --elf-link-background: var(--elf-neutral-light-color);
+    --elf-link-shadow: var(--elf-neutral-color);
+    --elf-link-color: var(--elf-neutral-text-color);
 }
 
-.ana-icon {
-    --ana-icon-size: 18px;
-    --ana-icon-color: --ana-accent-text-color;
+.elf-icon {
+    --elf-icon-size: 18px;
+    --elf-icon-color: --elf-accent-text-color;
 
-    height: var(--ana-icon-size);
-    width: var(--ana-icon-size);
-    min-height: var(--ana-icon-size);
-    min-width: var(--ana-icon-size);
+    height: var(--elf-icon-size);
+    width: var(--elf-icon-size);
+    min-height: var(--elf-icon-size);
+    min-width: var(--elf-icon-size);
     display: inline-block;
-    background-color: var(--ana-icon-color);
-    -webkit-mask-image: var(--ana-icon);
-    mask-image: var(--ana-icon);
+    background-color: var(--elf-icon-color);
+    -webkit-mask-image: var(--elf-icon);
+    mask-image: var(--elf-icon);
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-position: center;
@@ -198,58 +198,58 @@ body {
     mask-repeat: no-repeat;
 }
 
-.ana-link .ana-icon {
-    --ana-icon-color: var(--ana-link-color);
+.elf-link .elf-icon {
+    --elf-icon-color: var(--elf-link-color);
 }
 
-.ana-icon.ana-icon-deviantart {
-    --ana-icon: url("icons/deviantart.svg");
+.elf-icon.elf-icon-deviantart {
+    --elf-icon: url("icons/deviantart.svg");
 }
 
-.ana-icon.ana-icon-discord {
-    --ana-icon: url("icons/discord.svg");
+.elf-icon.elf-icon-discord {
+    --elf-icon: url("icons/discord.svg");
 }
 
-.ana-icon.ana-icon-ocs {
-    --ana-icon: url("icons/ocs_logo.png");
+.elf-icon.elf-icon-ocs {
+    --elf-icon: url("icons/ocs_logo.png");
 }
 
-.ana-icon.ana-icon-palette {
-    --ana-icon: url("icons/fa_palette.svg");
+.elf-icon.elf-icon-palette {
+    --elf-icon: url("icons/fa_palette.svg");
 }
 
-.ana-icon.ana-icon-email {
-    --ana-icon: url("icons/email.svg");
+.elf-icon.elf-icon-email {
+    --elf-icon: url("icons/email.svg");
 }
 
-.ana-icon.ana-icon-patreon {
-    --ana-icon: url("icons/patreon.svg");
+.elf-icon.elf-icon-patreon {
+    --elf-icon: url("icons/patreon.svg");
 }
 
-.ana-icon.ana-icon-kofi {
-    --ana-icon: url("icons/kofi.svg");
+.elf-icon.elf-icon-kofi {
+    --elf-icon: url("icons/kofi.svg");
 }
 
-.ana-icon.ana-icon-paypal {
-    --ana-icon: url("icons/paypal.svg");
+.elf-icon.elf-icon-paypal {
+    --elf-icon: url("icons/paypal.svg");
 }
 
-.ana-icon.ana-icon-telegram {
-    --ana-icon: url("icons/telegram.svg");
+.elf-icon.elf-icon-telegram {
+    --elf-icon: url("icons/telegram.svg");
 }
 
-.ana-icon.ana-icon-toyhouse {
-    --ana-icon: url("icons/toyhouse.svg");
+.elf-icon.elf-icon-toyhouse {
+    --elf-icon: url("icons/toyhouse.svg");
 }
 
-.ana-icon.ana-icon-furaffinity {
-    --ana-icon: url("icons/furaffinity.svg");
+.elf-icon.elf-icon-furaffinity {
+    --elf-icon: url("icons/furaffinity.svg");
 }
 
-.ana-icon.ana-icon-twitter {
-    --ana-icon: url("icons/twitter.svg");
+.elf-icon.elf-icon-twitter {
+    --elf-icon: url("icons/twitter.svg");
 }
 
-.ana-icon.ana-icon-instagram {
-    --ana-icon: url("icons/instagram.svg");
+.elf-icon.elf-icon-instagram {
+    --elf-icon: url("icons/instagram.svg");
 }
