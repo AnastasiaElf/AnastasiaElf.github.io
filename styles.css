@@ -145,7 +145,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     cursor: pointer;
     width: 100%;
     padding: 12px 32px;
@@ -252,4 +251,10 @@ body {
 
 .elf-icon.elf-icon-instagram {
     --elf-icon: url("icons/instagram.svg");
+}
+
+@media screen and (max-width: 620px) {
+    .elf-card-row {
+        flex-direction: column;
+    }
 }
