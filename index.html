@@ -20,131 +20,118 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="script.js" />
     <title>Anastasia Elf</title>
 </head>
 
 <body>
-    <!-- TODO: refactor structure and styles -->
-    <main class="elf-main">
-        <div class="elf-card elf-card-row">
-            <div class="elf-col">
-                <div class="elf-avatar"></div>
-            </div>
-            <div class="elf-col">
-                <img class="elf-logo" alt="logo" />
-                <div>Developer, designer, artist</div>
-            </div>
-        </div>
-
-        <div class="elf-card">
-            <div class="elf-card-header">
-                <div class="elf-card-label">Don't miss Monthly Raffles!</div>
-                <div class="elf-card-sub-label">Adoptables, giveaways, bases and more!</div>
-            </div>
-            <div class="elf-inline-row">
-                <a class="elf-link elf-deviantart" href="https://www.deviantart.com/anastasiaelf" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>DeviantArt</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="elf-card">
-            <div class="elf-card-header">
-                <div class="elf-card-label">Join my Discord server!</div>
-                <div class="elf-card-sub-label">Early access to adoptables, exclusive events and freebies!</div>
-            </div>
-            <div class="elf-inline-row">
-                <a class="elf-link elf-discord" href="https://discord.gg/2UMCkBknTQ" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>Discord server</div>
-                </a>
-            </div>
-        </div>
-
-
-        <div class="elf-card">
-            <div class="elf-card-label">Projects you might be interested in</div>
-            <div class="elf-inline-row">
-                <a class="elf-link elf-ocs" href="https://ocs.anastasiaelf.com/" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>OCs Gallery</div>
-                </a>
-            </div>
-            <div class="elf-inline-row">
-                <a class="elf-link elf-palette" href="https://colors.anastasiaelf.com/" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>Color Palette Generator</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="elf-row">
-            <div class="elf-card">
-                <div class="elf-card-label">Your support means a lot!</div>
-                <a class="elf-link elf-kofi" href="https://ko-fi.com/anastasiaelf" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>Ko-fi</div>
-                </a>
-                <a class="elf-link elf-paypal" href="https://www.paypal.me/anastasiaelf" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>PayPal</div>
-                </a>
-                <a class="elf-link elf-patreon" href="https://www.patreon.com/anastasiaelf" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>Patreon</div>
-                </a>
-            </div>
-            <div class="elf-card">
-                <div class="elf-card-label">Feel free to contact me!</div>
-                <a class="elf-link elf-telegram" href="https://t.me/AnastasiaElf" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>Telegram</div>
-                </a>
-
-                <div class="elf-link elf-discord" id="elf-discord-link">
-                    <div class="elf-link-content">
-                        <span class="elf-link-icon"></span>
-                        <span class="elf-link-text">@anastasiaelf</span>
-                    </div>
+    <main class="ana-content">
+        <div class="ana-card">
+            <div class="ana-row">
+                <img class="ana-avatar" alt="avatar" />
+                <div class="ana-about">
+                    <img class="ana-logo" alt="logo" />
+                    <div class="ana-sub-title">Developer, designer, artist</div>
                 </div>
-                <a class="elf-link elf-email" href="mailto:anastasia.elf.17@gmail.com" target="_blank"
+            </div>
+        </div>
+
+        <div class="ana-card">
+            <div class="ana-card-title">
+                <div class="ana-title">Don't miss Monthly Raffles!</div>
+                <div class="ana-sub-title">Adoptables, giveaways, bases and more!</div>
+            </div>
+            <a class="ana-link" href="https://www.deviantart.com/anastasiaelf" target="_blank"
+                rel="noopener noreferrer">
+                <span class="ana-icon ana-icon-deviantart"></span>
+                <span>DeviantArt</span>
+            </a>
+        </div>
+
+        <div class="ana-card">
+            <div class="ana-card-title">
+                <div class="ana-title">Join my Discord server!</div>
+                <div class="ana-sub-title">Early access to adoptables, exclusive events and freebies!</div>
+            </div>
+            <a class="ana-link" href="https://discord.gg/2UMCkBknTQ" target="_blank" rel="noopener noreferrer">
+                <span class="ana-icon ana-icon-discord"></span>
+                <span>Discord Server</span>
+            </a>
+        </div>
+
+        <div class="ana-card">
+            <div class="ana-title">Projects you might be interested in</div>
+            <a class="ana-link" href="https://ocs.anastasiaelf.com/" target="_blank" rel="noopener noreferrer">
+                <span class="ana-icon ana-icon-ocs"></span>
+                <span>My characters</span>
+            </a>
+            <a class="ana-link" href="https://colors.anastasiaelf.com/" target="_blank" rel="noopener noreferrer">
+                <span class="ana-icon ana-icon-palette"></span>
+                <span>Color Palette Generator</span>
+            </a>
+        </div>
+
+        <div class="ana-card-row">
+            <div class="ana-card">
+                <div class="ana-title">Your support means a lot!</div>
+                <a class="ana-link" href="https://ko-fi.com/anastasiaelf" target="_blank" rel="noopener noreferrer">
+                    <span class="ana-icon ana-icon-kofi"></span>
+                    <span>Ko-fi</span>
+                </a>
+                <a class="ana-link" href="https://www.paypal.me/anastasiaelf" target="_blank" rel="noopener noreferrer">
+                    <span class="ana-icon ana-icon-paypal"></span>
+                    <span>PayPal</span>
+                </a>
+                <a class="ana-link" href="https://www.patreon.com/anastasiaelf" target="_blank"
                     rel="noopener noreferrer">
-                    <div class="elf-link-content"><span class="elf-link-icon"></span>Mail me</div>
+                    <span class="ana-icon ana-icon-patreon"></span>
+                    <span>Patreon</span>
+                </a>
+            </div>
+            <div class="ana-card">
+                <div class="ana-title">Feel free to contact me!</div>
+                <div class="ana-link" id="ana-discord-link">
+                    <span class="ana-icon ana-icon-discord"></span>
+                    <span class="ana-link-text">@anastasiaelf</span>
+                </div>
+                <a class="ana-link" href="https://t.me/AnastasiaElf" target="_blank" rel="noopener noreferrer">
+                    <span class="ana-icon ana-icon-telegram"></span>
+                    <span>Telegram</span>
+                </a>
+                <a class="ana-link" href="mailto:anastasia.elf.17@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <span class="ana-icon ana-icon-email"></span>
+                    <span>Mail me</span>
                 </a>
             </div>
         </div>
 
-
-        <div class="elf-card">
-            <div class="elf-card-label">Additional links</div>
-            <div class="elf-row">
-                <div class="elf-links-col">
-                    <a class="elf-link elf-furaffinity elf-link-neutral"
-                        href="https://www.furaffinity.net/user/~anastasiaelf~/" target="_blank"
+        <div class="ana-card">
+            <div class="ana-title">Additional links</div>
+            <div class="ana-links-row">
+                <div class="ana-links-col">
+                    <a class="ana-link ana-link-neutral" href="https://www.furaffinity.net/user/~anastasiaelf~/"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="ana-icon ana-icon-furaffinity"></span><span>FurAffinity</span>
+                    </a>
+                    <a class="ana-link ana-link-neutral" href="https://toyhou.se/AnastasiaElf" target="_blank"
                         rel="noopener noreferrer">
-                        <div class="elf-link-content"><span class="elf-link-icon"></span>FurAffinity</div>
-                    </a>
-                    <a class="elf-link elf-toyhouse elf-link-neutral" href="https://toyhou.se/AnastasiaElf"
-                        target="_blank" rel="noopener noreferrer">
-                        <div class="elf-link-content"><span class="elf-link-icon"></span>Toyhouse</div>
+                        <span class="ana-icon ana-icon-toyhouse"></span><span>Toyhouse</span>
                     </a>
                 </div>
-                <div class="elf-links-col">
-                    <a class="elf-link elf-twitter elf-link-neutral" href="https://twitter.com/Ana_Elf_Art"
-                        target="_blank" rel="noopener noreferrer">
-                        <div class="elf-link-content"><span class="elf-link-icon"></span>Twitter</div>
+                <div class="ana-links-col">
+                    <a class="ana-link ana-link-neutral" href="https://twitter.com/Ana_Elf_Art" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="ana-icon ana-icon-twitter"></span><span>Twitter</span>
                     </a>
-                    <a class="elf-link elf-instagram elf-link-neutral"
-                        href="https://www.instagram.com/anastasia.elf.art/" target="_blank" rel="noopener noreferrer">
-                        <div class="elf-link-content"><span class="elf-link-icon"></span>Instagram</div>
+                    <a class="ana-link ana-link-neutral" href="https://www.instagram.com/anastasia.elf.art/"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="ana-icon ana-icon-instagram"></span><span>Instagram</span>
                     </a>
                 </div>
             </div>
         </div>
-
+        </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 
