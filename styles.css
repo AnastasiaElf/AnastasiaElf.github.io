@@ -217,6 +217,10 @@ body {
     --elf-icon: url("icons/fa_palette.svg");
 }
 
+.elf-icon.elf-icon-random {
+    --elf-icon: url("icons/fa-dice-five-solid.svg");
+}
+
 .elf-icon.elf-icon-email {
     --elf-icon: url("icons/email.svg");
 }
