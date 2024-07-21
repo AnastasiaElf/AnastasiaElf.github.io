@@ -12,7 +12,7 @@
     --elf-accent-text-color: #6f63cf;
 
     --elf-logo-img: url("images/logo-dark.png");
-    --elf-avatar-img: url("images/avatar-art.png");
+    --elf-avatar-img: url("images/avatar_light.webp");
 }
 
 body {
@@ -38,7 +38,7 @@ body {
         --elf-accent-text-color: #1a9473;
 
         --elf-logo-img: url("images/logo-light.png");
-        --elf-avatar-img: url("images/avatar-life.png");
+        --elf-avatar-img: url("images/avatar_dark.webp");
     }
 }
 
