@@ -257,6 +257,14 @@ body {
     --elf-icon: url("icons/instagram.svg");
 }
 
+.elf-icon.elf-icon-bluesky {
+    --elf-icon: url("icons/bluesky.svg");
+}
+
+.elf-icon.elf-icon-qrcode {
+    --elf-icon: url("icons/qrcode.svg");
+}
+
 @media screen and (max-width: 620px) {
     .elf-card-row {
         flex-direction: column;
